@@ -137,30 +137,23 @@ html, body {
 .inpDetail td {
 	padding: 0;
 }
-.inpDetail td .iptFld{
+.iptFld{
 	overflow: hidden;
-	height: 0;
-	max-height: 0;
-	-webkit-transition: all .15s ease-in .05s;
-	-moz-transition: all .15s ease-in .05s;
-	-ms-transition: all .15s ease-in .05s;
-	-o-transition: all .15s ease-in .05s;
-	transition: all .15s ease-in .05s;
-}
-.tblType01 tbody tr.active + tr.inpDetail td {
 	padding: 10px;
+	margin: 20px 0 0;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: #fafafa;
+	border: 5px solid #dadada;
 }
-.tblType01 tbody tr.active + tr.inpDetail td .iptFld {
-	height: auto;
-	max-height: 1000px;
-}
-.inpDetail .listSrcFld li {
+.iptFld .listSrcFld li {
 	float: left;
 	width: 49%;
 	margin: 20px 5px 10px;
 	vertical-align: top;
 }
-.inpDetail .listSrcFld li .iptText {
+.iptFld .listSrcFld li .iptText {
 	width: 100%;
 }
 .boxPaging {
