@@ -19,10 +19,4 @@ function utilInput() {
 			}
 		});
 	});
-
-	$('*[data-row=click]').each(function(){
-		$(this).click(function(){
-			$(this).addClass('active').siblings('*[data-row=click]').removeClass('active');
-		});
-	});
 }
