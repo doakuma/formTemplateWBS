@@ -186,3 +186,124 @@ html, body {
 	-moz-box-shadow: 0 0 2px #dadada;
 	box-shadow: 0 0 2px #dadada;
 }
+
+/* Forms */
+.radio,
+.check {
+	position: absolute;
+	opacity: 0;
+}
+input + label {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 5px 0 5px 26px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+input + label:before,
+input + label:after {
+	-webkit-transition: all .25s ease-in-out .15s;
+	-moz-transition: all .25s ease-in-out .15s;
+	-ms-transition: all .25s ease-in-out .15s;
+	-o-transition: all .25s ease-in-out .15s;
+	transition: all .25s ease-in-out .15s;
+}
+input + label:before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 26px;
+	background: #eaeaea;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+input + label:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.radio + label {
+	padding-left: 45px;
+}
+.radio + label:before {
+	width: 40px;
+	height: 20px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+	-webkit-box-shadow: 5px 5px 5px #dadada inset;
+	-moz-box-shadow: 5px 5px 5px #dadada inset;
+	box-shadow: 5px 5px 5px #dadada inset;
+}
+.radio + label:after {
+	left: 5px;
+	width: 15px;
+	height: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background: #999;
+}
+.radio:checked + label:after {
+	left: 20px;
+}
+
+.check + label:before {
+	width: 20px;
+	height: 20px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.check + label:after {
+	left: 10px;
+	width: 15px;
+	height: 10px;
+	border: 2px solid #333;
+	border-top: none;
+	border-right: none;
+	-webkit-transform: rotate(-45deg) translateY(-8px);
+	-moz-transform: rotate(angle);
+	-ms-transform: rotate(angle);
+	-o-transform: rotate(angle);
+	transform: rotate(-45deg) translateY(-8px);
+	opacity: 0;
+}
+.check:checked + label:after {
+	opacity: 1;
+}
+
+.boxSelect {
+	display: inline-block;
+	position: relative;
+	background: #ddd;
+	padding: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.boxSelect label {
+	display: block;
+	position: absolute;
+	font-size: 0;
+	line-height: 0;
+}
+.boxSelect select {
+	/* position: absolute; */
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	left: 0;
+	top: 5px;
+	border: none;
+	height: 30px;
+	line-height: 30px;
+	background-color: transparent;
+}
